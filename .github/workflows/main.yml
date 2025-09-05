@@ -1,0 +1,13 @@
+name: Main
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+      - run: ls -la
+      - uses: astral-sh/setup-uv@v6
+      - run: uvx --from=validate-pyproject[all] validate-pyproject ./pyproject.toml
+      - run: python --version
+
