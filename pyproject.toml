@@ -1,4 +1,4 @@
 [project]
 name = "uv-test"
 dynamic = ["version"]
-requires-python = "== 3.12.2"
+requires-python = "==3.12.2"
