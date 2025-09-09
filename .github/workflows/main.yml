@@ -9,5 +9,5 @@ jobs:
       - run: ls -la
       - uses: astral-sh/setup-uv@v6
       - run: uvx --from=validate-pyproject[all] validate-pyproject ./pyproject.toml
-      - run: python --version
+      - run: uv run python --version
 
